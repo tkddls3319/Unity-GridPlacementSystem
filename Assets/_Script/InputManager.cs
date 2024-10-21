@@ -18,10 +18,10 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
-        //if(Input.GetMouseButtonDown(0))
-        //    OnClicked?.Invoke();
-        //if(Input.GetKeyDown(KeyCode.Escape))
-        //    OnExit?.Invoke();
+        if (Input.GetMouseButtonDown(0))
+            OnClicked?.Invoke();
+        if (Input.GetKeyDown(KeyCode.Escape))
+            OnExit?.Invoke();
     }
 
     public bool IsPointerOverUI()
